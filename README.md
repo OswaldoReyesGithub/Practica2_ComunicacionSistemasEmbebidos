@@ -1,2 +1,2 @@
 # Practica2_ComunicacionSistemasEmbebidos
-Practica2_MQTT :Usuario: OswaldoR Contraseña: aio_BdCl65UoHYAfCpGOMT36W3Zd1h8D
+Practica2_MQTT :Usuario: OswaldoR Contraseña: aio_RaBj10gRJAiIcwQbG16bcGxWNO6u
