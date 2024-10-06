@@ -1,3 +1,12 @@
+/*
+ * Copyright (c) 2016, Freescale Semiconductor, Inc.
+ * Copyright 2016-2020 NXP
+ * All rights reserved.
+ *
+ *
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+
 /*******************************************************************************
  * Includes
  ******************************************************************************/
@@ -371,7 +380,7 @@ static void publish_s_gas(void *ctx)
 	PRINTF("Going to publish to the topic: \"%s\", message:  \"%s\"...\r\n", topic, message);
 
 	mqtt_publish(mqtt_client, topic, message, strlen(message), 1, 0, mqtt_message_published_cb, (void *)topic);
-
+	SDK_DelayAtLeastUs(100000, SDK_DEVICE_MAXIMUM_CPU_CLOCK_FREQUENCY);
 }
 
 static void publish_s_agua(void *ctx)
@@ -387,7 +396,7 @@ static void publish_s_agua(void *ctx)
 	PRINTF("Going to publish to the topic: \"%s\", message:  \"%s\"...\r\n", topic, message);
 
 	mqtt_publish(mqtt_client, topic, message, strlen(message), 1, 0, mqtt_message_published_cb, (void *)topic);
-
+	SDK_DelayAtLeastUs(100000, SDK_DEVICE_MAXIMUM_CPU_CLOCK_FREQUENCY);
 }
 
 /*!
@@ -406,7 +415,7 @@ static void publish_liquido(void *ctx)
    	PRINTF("Going to publish to the topic: \"%s\", message:  \"%s\"...\r\n", topic, message);
 
 	mqtt_publish(mqtt_client, topic, message, strlen(message), 1, 0, mqtt_message_published_cb, (void *)topic);
-
+	SDK_DelayAtLeastUs(100000, SDK_DEVICE_MAXIMUM_CPU_CLOCK_FREQUENCY);
 }
 
 /*!
@@ -425,7 +434,7 @@ static void publish_energia(void *ctx)
 	PRINTF("Going to publish to the topic: \"%s\", message:  \"%s\"...\r\n", topic, message);
 
 	mqtt_publish(mqtt_client, topic, message, strlen(message), 1, 0, mqtt_message_published_cb, (void *)topic);
-
+	SDK_DelayAtLeastUs(100000, SDK_DEVICE_MAXIMUM_CPU_CLOCK_FREQUENCY);
 }
 
 /*!
